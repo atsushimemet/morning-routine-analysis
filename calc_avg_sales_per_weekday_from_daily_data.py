@@ -1,3 +1,4 @@
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
@@ -25,8 +26,14 @@ def calc_avg_sales_per_weekday(daily_sales_data):
     return avg_sales_per_weekday
 
 
+def visualize_avg_sales_per_weekday(avg_sales_per_weekday):
+    plt.bar(avg_sales_per_weekday.index, avg_sales_per_weekday.values)
+    plt.show()
+
+
 if __name__ == "__main__":
     daily_sales_data = create_daily_sales_data()
     daily_sales_data = add_weekday_column(daily_sales_data)
     avg_sales_per_weekday = calc_avg_sales_per_weekday(daily_sales_data)
     print(avg_sales_per_weekday)
+    visualize_avg_sales_per_weekday(avg_sales_per_weekday)
