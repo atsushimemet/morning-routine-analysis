@@ -2,3 +2,4 @@ pandas
 numpy
 matplotlib
 pandas-stubs
+mecab-python3
