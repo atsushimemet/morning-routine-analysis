@@ -3,3 +3,4 @@ numpy
 matplotlib
 pandas-stubs
 mecab-python3
+scikit-learn
