@@ -1,0 +1,9 @@
+statsmodels
+pandas
+jupyterlab
+jupyterlab_code_formatter
+isort
+flake8
+black
+mypy
+pyarrow
